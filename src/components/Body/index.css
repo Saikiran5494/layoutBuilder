@@ -1,0 +1,111 @@
+/* Write your CSS here */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 80vh;
+}
+
+.left-container {
+  background-color: #cbd5e1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.body-heading {
+  color: #64748b;
+  font-size: 15px;
+}
+.unordered-list {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.list {
+  color: #64748b;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.content-container {
+  background-color: #e2e8f0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-top: 10px;
+}
+.para {
+  color: #64748b;
+  text-align: center;
+}
+
+.right-container {
+  background-color: #cbd5e1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+.adds-container {
+  display: flex;
+  flex-direction: row;
+}
+.adds {
+  border: 1px solid #64748b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+.add {
+  color: #64748b;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .body-container {
+    flex-direction: row;
+  }
+  .left-container {
+    width: 33%;
+    align-items: flex-start;
+  }
+  .unordered-list {
+    flex-direction: column;
+  }
+  .list {
+    margin-left: 10px;
+  }
+  .content-container {
+    align-items: flex-start;
+    width: 33%;
+  }
+  .para {
+    text-align: left;
+  }
+  .right-container {
+    align-items: flex-start;
+    width: 33%;
+  }
+  .adds-container {
+    flex-direction: column;
+  }
+  .adds {
+    width: 100px;
+    height: 100px;
+  }
+}
